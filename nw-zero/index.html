@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>NeuroWarriors: Zero || Game</title>
+
+  <script type="text/javascript">
+    // Much more efficient than what we learned last wk. This code will embed the font on ALL html pages.
+    WebFontConfig = {
+      google: {
+        families: ['VT323']
+      }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="phaser.min.js"></script>
+
+  <script src="js/Boot.js"></script>
+  <script src="js/Preloader.js"></script>
+  <script src="js/Main.js"></script>
+  <script src="js/MainNoMusic.js"></script>
+  <script src="js/Help.js"></script>
+  <script src="js/Credits.js"></script>
+  <script src="js/Game.js"></script>
+  <script src="js/P1Win.js"></script>
+  <script src="js/P2Win.js"></script>
+  <script src="js/Tie.js"></script>
+</head>
+
+<body>
+  <div id="phaser-canvas"></div>
+  <p>This game features Gamepad support!
+  <!--Custom Javascript-->
+  <script type="text/javascript">
+    window.onload = function() {
+      var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas');
+
+      game.state.add('Boot', gameObj.Boot);
+      game.state.add('Preloader', gameObj.Preloader);
+      game.state.add('Main', gameObj.Main);
+      game.state.add('MainNoMusic', gameObj.MainNoMusic);
+      game.state.add('Help', gameObj.Help);
+      game.state.add('Credits', gameObj.Credits);
+      game.state.add('Game', gameObj.Game);
+      game.state.add('P1Win', gameObj.P1Win);
+      game.state.add('P2Win', gameObj.P2Win);
+      game.state.add('Tie', gameObj.Tie);
+
+      game.state.start('Boot');
+    } // end window.onload
+  </script>
+</body>
+</html>

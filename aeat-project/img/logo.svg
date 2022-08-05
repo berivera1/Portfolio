@@ -1,0 +1,8 @@
+<svg version="1.1" id="Logo-SVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 550 205" xml:space="preserve">
+ <style type="text/css">
+ 	.logo-svg-spoon{fill:#F7F8FF;}
+ 	.logo-svg-text{fill:#CCCCCC;}
+ </style>
+ <path class="logo-svg-spoon" d="M373.2,7.3h-0.8h-52l-65.4,148.1h-74.6v-34.6h84.2V80.7h-84.2V48.8H276V7.3H127.4v0l-15.7-0.9L99.6,44.3 l27.8,6.7v65H67.7L50,154.7h77.4v42.1h109.4h42.8h11.9l14.9-36.8h80.1l14.9,36.8h29.2h26.5h27.1v-147h57.9V7.3H373.2z M322.1,120.5 l24.4-60.6l24.4,60.6H322.1z M392,49.8h38.6v87.1L392,49.8z"/>
+ <path class="logo-svg-text" d="M120.6,8.8C103.9,0.7,81,13.4,69.4,37.2C64.2,48,62.1,59.2,63,69c0,0,0,0,0,0c2.8,40.7-21.7,65.3-42.3,97.6 c-20.6,32.3-1,43.5,20.1,9.8C62,142.7,81.1,111.3,110.5,90c0,0,0,0,0,0c7.6-5.4,14.4-13.4,19.3-23.4 C141.3,42.8,137.2,16.9,120.6,8.8z"/>
+</svg>

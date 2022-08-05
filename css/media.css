@@ -1,0 +1,466 @@
+/*
+
+
+
+    =======================
+
+    MOBILE + TABLET CHANGES
+
+    =======================
+
+
+
+*/
+
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+  .main-txt {
+
+    font-size: 250%;
+
+  }
+
+
+
+  #explore-btn-pic {
+
+    width: 1.25rem;
+
+  }
+
+
+
+  #hamburger-icon {
+
+      width: 2rem;
+
+      padding-right: 1rem;
+
+  }
+
+
+
+  #splash {
+
+    z-index: 500;
+
+  }
+
+
+
+  #bear-logo-red {
+
+    width: 3.5rem;
+
+  }
+
+
+
+  #exit-btn-img {
+
+    width: 2rem;
+
+  }
+
+
+
+  #skip-btn-img {
+
+    right: 2%;
+
+    width: 2rem;
+
+  }
+
+
+
+  #social-icons {
+
+    transform: translateX(-50%) !important;
+
+  }
+
+
+
+  #proj-up-icon {
+
+    width: 1rem;
+
+  }
+
+
+
+  .sidenav-txt {
+
+    font-size: 200%;
+
+  }
+
+
+
+  .proj-logo-link {
+
+    width: 15rem;
+
+  }
+
+
+
+  #proj-down-icon {
+
+    width: 1rem;
+
+  }
+
+
+
+  #main-grid {
+
+    grid-template-areas:
+
+    "sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav sidenav"
+
+    ". . . . . . . . . . . . . . . . . . . ."
+
+    ". . . . . . . . . . . . . . . . . . . ."
+
+    ". . . . . . . . . . . . . . . . . . . ."
+
+    ". . title-card title-card title-card title-card title-card title-card title-card title-card title-card title-card title-card title-card . . . . . ."
+
+    ". . title-card title-card title-card title-card title-card title-card title-card title-card title-card title-card title-card title-card . . . . . ."
+
+    ". . . . . . . . . . . . . . . . . . . ."
+
+    ". . . . . . . . . . . . . . . . . . . ."
+
+    ". . . . . . . . . . . . . . . . . . . ."
+
+    ". . . . . . . . . . . . . . . . . . . .";
+
+  }
+
+
+
+  #sidenav {
+
+    z-index: 200;
+
+
+
+    grid-template-columns: repeat(10, 10%);
+
+    grid-template-rows: 10vh;
+
+    grid-template-areas:
+
+    ". proj-up cur . mobile-logo . last proj-down . hamburger";
+
+  }
+
+
+
+  #main-menu {
+
+    grid-template-areas:
+
+    ". . . . . . . . . logo logo . . . . . . exit exit exit"
+
+    ". . . . . . . . . . . . . . . . . . . ."
+
+    ". . . . . . . . . home home . . . . . . . . ."
+
+    ". . . . . . . . . . . . . . . . . . . ."
+
+    ". . . . . . . . . about about . . . . . . . . ."
+
+    ". . . . . . . . . . . . . . . . . . . ."
+
+    ". . . . . . . . . work work . . . . . . . . ."
+
+    ". . . . . . . . . . . . . . . . . . . ."
+
+    ". . . . . . social social social social social social social social . . . . . ."
+
+    ". . . . . . . . . . . . . . . . . . . .";
+
+
+
+    opacity: 0;
+
+    transition: 0.5s ease-in-out;
+
+  }
+
+
+
+  #mobile-logo {
+
+    width: 8rem;
+
+    z-index: 50;
+
+    grid-area: mobile-logo;
+
+  }
+
+
+
+  #bear-logo-mobile {
+
+    width: 8rem;
+
+  }
+
+
+
+  .menu {
+
+    width: 100vw;
+
+    height: 0;
+
+  }
+
+
+
+  .project-display {
+
+    width: 100vw;
+
+    height: 90vh;
+
+    z-index: 10;
+
+    right: 0%;
+
+
+
+    transition: 0.5s ease-in-out;
+
+  }
+
+
+
+  .push-down {
+
+    animation: push-down 0.5s ease-in-out forwards;
+
+  }
+
+
+
+  .pop-up {
+
+    animation: pop-up 0.5s ease-in-out forwards;
+
+  }
+
+
+
+  .abt-and-cnt-desc {
+
+    left: 10%;
+
+    width: 90vw;
+
+  }
+
+
+
+  .abt-and-cnt-desc {
+
+    font-size: 125%;
+
+    text-align: justify;
+
+  }
+
+
+
+  .in-menu-title {
+
+    margin-top: 10%;
+
+    text-align: center;
+
+  }
+
+
+
+  #vl {
+
+    display: none;
+
+  }
+
+
+
+  #contact-form {
+
+    width: 100%;
+
+  }
+
+
+
+  .input-field {
+
+    padding: 2% 3%;
+
+    border: 6px solid var(--main-bg-color);
+
+    border-radius: 20px;
+
+  }
+
+
+
+  #submit-button {
+
+    font-size: 70%;
+
+    padding: 1vh 2vw;
+
+  }
+
+}
+
+
+
+/*
+
+
+
+    ===================
+
+    TABLET ONLY CHANGES
+
+    ===================
+
+
+
+*/
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .main-txt {
+
+    font-size: 350%;
+
+  }
+
+
+
+  #explore-btn-pic {
+
+    width: 1.75rem;
+
+  }
+
+
+
+  #hamburger-icon {
+
+      width: 3rem;
+
+      padding-right: 1rem;
+
+  }
+
+
+
+  #bear-logo-red {
+
+    width: 4.5rem;
+
+  }
+
+
+
+  #exit-btn-img {
+
+    width: 3rem;
+
+  }
+
+
+
+  #skip-btn-img {
+
+    width: 3rem;
+
+  }
+
+
+
+  #social-icons {
+
+    transform: translateX(0%) !important;
+
+  }
+
+
+
+  #proj-up-icon {
+
+    width: 1.5rem;
+
+  }
+
+
+
+  .sidenav-txt {
+
+    font-size: 250%;
+
+  }
+
+
+
+  .proj-logo-link {
+
+    width: 25rem;
+
+  }
+
+
+
+  #proj-down-icon {
+
+    width: 1.5rem;
+
+  }
+
+
+
+  #bear-logo-mobile {
+
+    width: 4.5rem;
+
+  }
+
+
+
+  .abt-and-cnt-desc {
+
+    font-size: 200%;
+
+    text-align: justify;
+
+  }
+
+
+
+  .input-field {
+
+    border-radius: 30px;
+
+  }
+
+}
+

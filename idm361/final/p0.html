@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+<html lang="en" manifest="cache.manifest">
+
+<head>
+  <title>SFKZ - O Wins</title>
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css-normalize.css">
+  <link rel="stylesheet" href="css-add2home.css">
+  <link rel="stylesheet" href="css-main.css">
+  <!-- iPhone ICON -->
+  <link rel="apple-touch-icon" href="img/icons/apple-icon-57x57.png" sizes="57x57">
+  <!-- iPhone ICON (Retina) -->
+  <link rel="apple-touch-icon" href="img/icons/apple-icon-114x114.png" sizes="114x114">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/rotate.png"/>
+</head>
+
+<body onload="pageSetUp()" class="p0">
+  <!-- PAGE CONTENT -->
+  <div class="portdiv centered" id="portdiv-p0">
+    <img id="logo" src="img/logo.png" alt="SFKZ Logo"  onclick="jmp2LocalPage('index.html')"/><br />
+    <h1><span class="varela">O</span> WINS!</h1>
+    <button type="button" name="game_btn" class="mainscrn_btn instr-crdt-btn" id="game_btn" onclick="jmp2LocalPage('game.html')">NEW GAME</button><br />
+    <button type="button" name="instr_btn" class="mainscrn_btn instr-crdt-btn"  id="instr_btn" onclick="jmp2LocalPage('instr.html')">INSTRUCTIONS</button><br />
+    <button type="button" name="credits_btn" class="mainscrn_btn instr-crdt-btn"  id="credits_btn" onclick="jmp2LocalPage('credits.html')">CREDITS</button>
+  </div>
+    <div id="landdiv">
+    <img id="rotatepic" src="img/rotate.png" alt="Rotate Device" />
+    <h1>Turn your device to PORTRAIT to play SFKZ!</h1>
+  </div>
+  <!-- JAVASCRIPT-->
+  <script src="js-refresh-manifest.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    //	Customize configuration variable BEFORE loading addToHome.js file
+    var addToHomeConfig = {
+      touchIcon: true
+    };
+
+  </script>
+  <script src="js-add2home.js"></script>
+  <script src="js-main.js"></script>
+</body>
+
+</html>

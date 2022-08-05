@@ -1,0 +1,168 @@
+/*----------------
+   SMARTPHONE
+----------------*/
+@media screen and (max-width : 767px) and (min-height : 500px) {
+  .tape-recorder {
+    transform: translateX(-50%) scale(0.45) rotate(10deg);
+  }
+  .great-wave {
+    height: 410px;
+  }
+}
+@media screen and (max-width : 767px) and (min-height : 600px) {
+  .tape-recorder {
+    transform: translateX(-50%) scale(0.5) rotate(10deg);
+  }
+  .great-wave {
+    height: 450px;
+  }
+}
+@media screen and (max-width : 767px) and (min-height : 700px) {
+  .tape-recorder {
+    transform: translateX(-50%) scale(0.6) rotate(10deg);
+  }
+  .great-wave {
+    height: 530px;
+  }
+}
+@media screen and (max-width : 767px) and (min-height : 800px) {
+  .great-wave {
+    background-size: 250% auto;
+    height: 620px;
+  }
+  .copyright {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width : 360px) {
+  .copyright {
+    bottom: 2%;
+  }
+}
+
+/*----------------
+     TABLET
+----------------*/
+@media screen and (min-width : 768px) {
+  .opn-title {
+    font-size: 3.8em;
+    left: 31%;
+    top: -1%;
+  }
+  .spaced-out-txt {
+    letter-spacing: 0.08em;
+  }
+  .left-links {
+    font-size: 2em;
+    top: 200px;
+    left: 30%;
+  }
+  #concert-info {
+    line-height: 1.75em;
+    font-size: 1.75em;
+    top: 165px;
+    transform: translateX(43%);
+  }
+  .left-link-indiv {
+    margin-bottom: 24px;
+  }
+  #mute-btn {
+    font-size: 1.6em;
+    top: 20px;
+    right: 5%;
+    transform: translateX(0%);
+  }
+  .mute-btn-active {
+    margin-top: 22px;
+  }
+  .copyright {
+    font-size: 1em;
+    bottom: 0%;
+  }
+  #lineart-svg-container {
+    left: 35%;
+    width: 480px;
+  }
+  .tape-recorder {
+    transform: translate(-24%, 38%) scale(1) rotate(10deg);
+  }
+  .great-wave {
+    height: 820px;
+    background-position: 50% 00%;
+    background-size: 160% auto;
+  }
+}
+@media screen and (min-width : 1000px) {
+  #concert-info {
+    transform: translateX(25%);
+  }
+}
+@media screen and (min-width : 1024px) {
+  .great-wave {
+    height: 1160px;
+  }
+}
+@media screen and (min-width : 1160px) {
+  #concert-info {
+    transform: translateX(20%);
+  }
+}
+
+/*----------------
+     DESKTOP
+----------------*/
+@media screen and (min-width : 1280px) {
+  .opn-title {
+    font-size: 4.5em;
+    left: 25%;
+    top: 4%;
+  }
+  .left-links {
+    font-size: 3em;
+    top: 320px;
+    left: 29%;
+  }
+  #concert-info {
+    transform: translateX(7%);
+    line-height: 1.84em;
+    font-size: 2.3em;
+    top: 272px;
+  }
+  #lineart-svg-container {
+    left: 28%;
+    top: 6%;
+    width: 600px;
+  }
+  .great-wave {
+    background-size: 100% auto;
+    height: 820px;
+  }
+  .tape-recorder {
+    transform: translate(10%, 40%) scale(0.9) rotate(-10deg);
+  }
+}
+@media screen and (min-width : 1600px) {
+  .great-wave {
+    background-size: 100% auto;
+    height: 800px;
+  }
+  .left-links {
+    left: 28%;
+  }
+  #concert-info {
+    transform: translateX(-18%);
+  }
+}
+@media screen and (min-width : 1920px) {
+  #concert-info {
+    transform: translateX(-36%);
+  }
+  .tape-recorder {
+    transform: translate(30%, 30%) scale(0.9) rotate(-10deg);
+  }
+}
+@media  screen and (height: 768px) and (width: 1366px) {
+  .tape-recorder {
+    transform: translate(23%, 10%) scale(0.7) rotate(-10deg);
+  }
+}

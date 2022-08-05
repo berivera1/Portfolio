@@ -1,0 +1,263 @@
+@media screen and (max-width: 600px) {
+  #searchbar-div {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #searchbar-div input[type=text] {
+    width: 100%;
+  }
+  #searchbar-div input[type=text]:focus {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  #amazing-btn {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #search-form {
+    width: 90%;
+  }
+}
+
+/*
+====================================
+          TABLET STYLING
+====================================
+*/
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.25em;
+  }
+
+  #dd-menu-div {
+    display: none;
+  }
+
+  #dd-menu-pullout-menu {
+    display: none;
+  }
+
+  .navbar-txt-item {
+    display: block;
+  }
+
+  #logo-div {
+    margin-left: 0;
+    margin-right: auto;
+    transform: translateX(0%);
+  }
+
+  #search-div {
+    width: 1.5rem;
+    padding-right: 1em;
+  }
+
+  #navbar-footer {
+    font-size: 1.2em;
+  }
+
+  #amazing-btn {
+    width: 50%;
+  }
+
+  .beginning-desc {
+    padding: 4em;
+    padding-top: 0.25em;
+    padding-bottom: 1em;
+    margin: auto;
+    max-width: 960px;
+  }
+
+  #main-desc {
+    padding: 4em;
+    padding-top: 0.25em;
+    padding-bottom: 1em;
+    margin: auto;
+    max-width: 960px;
+  }
+
+  .card-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  #last-card {
+    width: 40%;
+    margin: auto;
+    grid-column: 1 / span 2;
+  }
+
+  #filter-icon {
+    width: 1.1em;
+    height: 1.1em;
+  }
+
+  #results-num {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  .ingredients-list-div {
+    padding-bottom: 2em;
+  }
+}
+
+@media screen and (min-width : 1024px) {
+  .navbar-txt-item {
+    font-size: 1.4em;
+  }
+  #search-div {
+    padding-right: 2em;
+  }
+  #navbar-footer {
+    font-size: 1.6em;
+  }
+  #amazing-btn {
+    width: 32%;
+  }
+
+  #index-welcome {
+    padding-top: 12em;
+  }
+
+  #welcome-text {
+    font-size: 3em;
+  }
+
+  #filter-icon {
+    width: 1.1em;
+    height: 1.1em;
+  }
+}
+
+/*
+====================================
+         DESKTOP STYLING
+====================================
+*/
+
+@media screen and (min-width : 1280px) {
+  body {
+    font-size: 1em;
+  }
+
+  .card-holder {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #last-card {
+    width: 80%;
+    grid-column: auto;
+    margin: auto;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  /*
+  ====================================
+             RECIPE PG
+  ====================================
+  */
+
+  .recipe-header-img {
+    display: block;
+    max-width: 480px;
+  }
+
+  .beginning-desc {
+    padding: 1em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+
+  .recipe-head {
+   max-width: 960px;
+   margin: auto;
+   display: grid;
+   grid-template-columns: auto;
+   grid-template-rows: repeat(2, auto);
+   grid-template-areas:
+   "main-img"
+   "main-desc";
+ }
+
+ .recipe-header-img {
+   grid-area: main-img;
+   padding: 0em !important;
+   margin-left: 0em !important;
+   margin-right: 0em !important;
+   max-width: 100%;
+   object-fit: cover;
+   max-height: 400px;
+  }
+ .beginning-desc{ grid-area: main-desc; }
+
+ .main-desc-recipe {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(4, auto);
+   grid-template-areas:
+   "ing-img ing-list"
+   "step-1 step-2"
+   "step-3 step-4"
+   "step-5 step-6";
+ }
+
+ .grid-area {
+   margin-left: 1em;
+   margin-right: 1em;
+ }
+
+ .ingredients-list-div { grid-area: ing-list; }
+ .ingredients-img-div { grid-area: ing-img; }
+ .pic-step-combo-1 { grid-area: step-1; }
+ .pic-step-combo-2 { grid-area: step-2; }
+ .pic-step-combo-3 { grid-area: step-3; }
+ .pic-step-combo-4 { grid-area: step-4; }
+ .pic-step-combo-5 { grid-area: step-5; }
+ .pic-step-combo-6 { grid-area: step-6; }
+
+ /*
+ ====================================
+            RECIPE PG
+ ====================================
+ */
+
+  #filter-icon {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
+
+@media screen and (min-width : 1400px) {
+  .beginning-desc {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    font-size: 1.25em;
+  }
+
+  #main-desc {
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    font-size: 1.25em;
+  }
+
+  #amazing-btn {
+    width: 35%;
+  }
+
+  #welcome-text {
+    font-size: 5em;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+<html lang="en" manifest="cache.manifest">
+
+<head>
+  <title>SFKZ - Instructions</title>
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css-normalize.css">
+  <link rel="stylesheet" href="css-add2home.css">
+  <link rel="stylesheet" href="css-main.css">
+  <!-- iPhone ICON -->
+  <link rel="apple-touch-icon" href="img/icons/apple-icon-57x57.png" sizes="57x57">
+  <!-- iPhone ICON (Retina) -->
+  <link rel="apple-touch-icon" href="img/icons/apple-icon-114x114.png" sizes="114x114">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/rotate.png"/>
+</head>
+
+<body onload="pageSetUp()">
+  <!-- PAGE CONTENT -->
+  <div class="portdiv" id="portdiv-instr">
+    <img id="logo" src="img/logo.png" alt="SFKZ Logo"  onclick="jmp2LocalPage('index.html')"/><br />
+    <p>This is a local multiplayer game meant for 2 players.</p>
+    <p>Player 1: <span class="varela">O</span><span id="transp-txt">........</span>Player 2: <span class="varela">X</span></p>
+    <p class="inline">On your turn, you can move one piece one spot in any cardinal direction</p> <img id="movepic" src="img/move.png" /><br />
+    <p class="inline">OR you can attack one piece one spot in any direction</p> <img id="attackpic" src="img/attack.png" />
+    <p>When moving a piece, the spot they moved from caves in.</p>
+    <p>Conquer all of your opponent's pieces to win!</p>
+    <button type="button" name="game_btn" class="mainscrn_btn instr-crdt-btn game_btn_instr" id="game_btn" onclick="jmp2LocalPage('game.html')">PLAY</button>
+    <button type="button" name="credits_btn" class="mainscrn_btn instr-crdt-btn"  id="credits_btn" onclick="jmp2LocalPage('credits.html')">CREDITS</button>
+  </div>
+    <div id="landdiv">
+    <img id="rotatepic" src="img/rotate.png" alt="Rotate Device" />
+    <h1>Turn your device to PORTRAIT to play SFKZ!</h1>
+  </div>
+  <!-- JAVASCRIPT-->
+  <script src="js-refresh-manifest.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    //	Customize configuration variable BEFORE loading addToHome.js file
+    var addToHomeConfig = {
+      touchIcon: true
+    };
+
+  </script>
+  <script src="js-add2home.js"></script>
+  <script src="js-main.js"></script>
+</body>
+
+</html>

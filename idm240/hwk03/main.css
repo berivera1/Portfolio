@@ -1,0 +1,76 @@
+/*Mobile First*/
+
+body {
+  background-color: #FFF;
+  color: #000;
+}
+
+.svg-inline, object, #particle-canvas {
+  margin: 1em;
+}
+
+#canvas-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#rifts:hover {
+  animation: distortionEffect 0.34s linear infinite;
+}
+
+.svg-img:hover, #canvas-holder:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width : 480px) {
+  .svg-img {
+    float: left;
+    margin: auto;
+    width: 50%;
+  }
+
+  #rifts {
+    float: none;
+  }
+
+  #canvas-holder {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width : 768px) {
+  .svg-img {
+    width: 33%;
+  }
+
+  #myriad {
+    float: left;
+  }
+
+  #rifts {
+    float: right;
+  }
+
+  #canvas-holder {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width : 1024px) {
+  .svg-img {
+    width: 25%;
+  }
+
+  #myriad {
+    float: left;
+  }
+  #rifts {
+    float: none;
+  }
+
+  #canvas-holder {
+    width: 25%;
+  }
+}

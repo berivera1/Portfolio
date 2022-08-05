@@ -1,0 +1,173 @@
+body {
+	background-color:#280a57;
+	color: white;
+}
+
+.credits {
+	font-weight: 700;
+}
+
+.portdiv {
+	text-align: center;
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#portdiv-index {
+	height: 430px;
+	width: 250px;
+}
+
+#portdiv-instr {
+	height: 430px;
+	width: 250px;
+}
+
+#portdiv-credits {
+	height: 540px;
+	width: 250px;
+}
+
+#portdiv-game {
+	height: 100%;
+	width: 99%;
+}
+
+#landdiv {
+	width: 480px;
+	-webkit-user-select: none;
+	text-align: center;
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#logo {
+	margin-top: 24px;
+	width: 240px;
+}
+
+#logo-tiny {
+	width: 120px;
+	display: inline;
+}
+
+#whosturn {
+	display: inline;
+	vertical-align: 100%;
+	color: #e66e0b;
+	text-shadow:
+    3px 3px 0 #000,
+    /* Simulated effect for Firefox and Opera
+       and nice enhancement for WebKit */
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+}
+
+#rotatepic {
+	width: 200px;
+	animation: rotation 2s infinite linear;
+}
+
+.mainscrn_btn {
+	font-weight: 700;
+	margin: 12px;
+	background-color: #6e2f3c;
+	border: 5px solid black;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+
+.mainscrn_btn:active {
+	background-color: #e66e0b;
+}
+
+.inline {
+	display: inline;
+}
+
+#movepic {
+	width: 12px;
+}
+
+#attackpic {
+	width: 12px;
+}
+
+#gamescreen {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+}
+
+#gamescreen > div {
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	padding-top: 26px;
+  text-align: center;
+}
+
+@media only screen and (orientation:portrait) {
+	body {
+		background-color: #280a57;
+	}
+	.portdiv {
+		display: block;
+	}
+	#landdiv {
+		display: none;
+	}
+}
+
+@media only screen and (orientation:landscape) {
+	body {
+		background-color: #280a57;
+	}
+	#content {
+		max-width: 70%;
+	}
+	.portdiv {
+		display: none;
+	}
+	#landdiv {
+		display: block;
+	}
+}
+
+@media only screen and (max-aspect-ratio: 1/2) {
+	#content {
+		max-width: 58%;
+	}
+}
+
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }

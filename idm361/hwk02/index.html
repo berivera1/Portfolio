@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+<html lang="en" manifest="cache.manifest">
+
+<head>
+  <title>Soda 2K19</title>
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css-normalize.css">
+  <link rel="stylesheet" href="css-add2home.css">
+  <link rel="stylesheet" href="css-main.css">
+  <!-- iPhone ICON -->
+  <link rel="apple-touch-icon" href="img/icons/apple-icon-57x57.png" sizes="57x57">
+  <!-- iPhone ICON (Retina) -->
+  <link rel="apple-touch-icon" href="img/icons/apple-icon-114x114.png" sizes="114x114">
+</head>
+
+<body onload="pageSetUp()">
+  <!-- PAGE CONTENT -->
+	<div id="content">
+		<img id="portpic" src="img/crabsoda.svg" alt="Crab Soda" />
+		<img id="landpic" src="img/spiltsoda.svg" alt="Spilt Soda" />
+		<div id="output"></div>
+	</div>
+	<!-- JAVASCRIPT-->
+  <script src="js-refresh-manifest.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    //	Customize configuration variable BEFORE loading addToHome.js file
+    var addToHomeConfig = {
+      touchIcon: true
+    };
+
+  </script>
+  <script src="js-add2home.js"></script>
+  <script src="js-main.js"></script>
+</body>
+
+</html>

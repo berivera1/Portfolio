@@ -1,0 +1,18 @@
+<svg id="lineart-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 600">
+<defs>
+    <style>
+      .lineart {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <path id="right-short" class="lineart" d="M273,509V139l66,65"/>
+  <path id="right-long" class="lineart" d="M251,547V144l80,88,9-28,173-68L337,15,271,61,222,20"/>
+  <path id="mid" class="lineart" d="M233,105V580"/>
+  <path id="left-lower-short" class="lineart" d="M141,167l46,55"/>
+  <path id="left-lower-long" class="lineart" d="M87,109l14,39,17-40h32l37,17V507"/>
+  <path id="left-upper" class="lineart" d="M28,25L82,69l54-44,83,45,40-50"/>
+</svg>

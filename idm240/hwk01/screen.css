@@ -1,0 +1,32 @@
+/*Phone*/
+@media screen and (min-width : 320px) {
+}
+
+/*Tablet*/
+@media screen and (min-width : 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width : 1024px) {
+  #info {
+    max-width: 640px;
+    float: left;
+  }
+  #pics {
+    float: right;
+  }
+  .poster {
+    float: left;
+    padding-right: 16px;
+  }
+  .right {
+    padding-right: 0em !important;
+  }
+}
+
+/*Desktop - Large*/
+@media screen and (min-width : 1280px) {
+}

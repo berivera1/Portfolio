@@ -1,0 +1,9 @@
+<svg version="1.1" id="Hamburger-SVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 292 292" xml:space="preserve">
+<style type="text/css">
+	.hamburger-svg-icon{fill:none;stroke:#F7F8FF;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<path class="hamburger-svg-icon" d="M280.1,265.1"/>
+<line class="hamburger-svg-icon" x1="20.8" y1="71.8" x2="270.8" y2="71.8"/>
+<line class="hamburger-svg-icon" x1="20.8" y1="143.3" x2="270.8" y2="143.3"/>
+<line class="hamburger-svg-icon" x1="20.8" y1="219.8" x2="270.8" y2="219.8"/>
+</svg>

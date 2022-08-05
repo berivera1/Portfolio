@@ -1,0 +1,215 @@
+/*
+
+    ======================
+    MICROSOFT EDGE CHANGES
+    ======================
+
+*/
+
+@supports (-ms-ime-align: auto) {
+  .fade-out {
+        display: none;
+  }
+
+  @-webkit-keyframes background-strike-on {
+    0% {
+      background: #000;
+    }
+    80% {
+      background: #000;
+    }
+    100% {
+      background: #C74D8C;
+    }
+  }
+
+  @keyframes background-strike-on {
+    0% {
+      background: #000;
+    }
+    80% {
+      background: #000;
+    }
+    100% {
+      background: #C74D8C;
+    }
+  }
+}
+
+/*
+
+    ==============
+    SAFARI CHANGES
+    ==============
+
+*/
+
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+        #nefa-title {
+          font-size: 150% !important;
+        }
+
+        #formbox {
+          font-size: 100%;
+        }
+
+        #description-text {
+          font-size: 100%;
+        }
+
+        #sign-desc {
+          font-size: 150%;
+        }
+    }
+
+    @-webkit-keyframes text-pop-up-top {
+      0% {
+        top: 50%;
+      }
+      100% {
+        -webkit-transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%);
+        top: 4%;
+        font-size: 100%;
+        text-shadow: 0 1px 0 rgba(var(--title-depth-color), 1), 0 2px 0 rgba(var(--title-depth-color), 1), 0 3px 0 rgba(var(--title-depth-color), 1), 0 4px 0 rgba(var(--title-depth-color), 1), 0 5px 0 rgba(var(--title-depth-color), 1), 0 6px 0 rgba(var(--title-depth-color), 1), 0 7px 0 rgba(var(--title-depth-color), 1), 0 8px 0 rgba(var(--title-depth-color), 1), 0 9px 0 rgba(var(--title-depth-color), 1), 0 30px 30px rgba(var(--title-color), 0.3);
+      }
+    }
+
+    @keyframes text-pop-up-top {
+      0% {
+        top: 50%;
+      }
+      100% {
+        -webkit-transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%);
+        top: 4%;
+        font-size: 100%;
+      }
+    }
+}
+
+
+/*
+
+    =======================
+    MOBILE + TABLET CHANGES
+    =======================
+
+*/
+
+@media screen and (max-aspect-ratio: 1/1) {
+  #sign-desc {
+    font-size: 100%;
+
+    padding-left: 15%;
+    padding-right: 9%;
+    padding-top: 0%;
+  }
+
+  #sign-info {
+    left: 35vw;
+  }
+
+  #restart-form {
+    width: 20rem;
+  }
+
+  #formbox {
+    font-size: 100%;
+
+    width: 90%;
+  }
+
+  #description-text {
+    font-size: 100%;
+  }
+
+  #grd-zodiac-wheel {
+    height: 50%;
+    top: 40%;
+  }
+
+  @-webkit-keyframes text-pop-up-top {
+    0% {
+      top: 50%;
+    }
+    100% {
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+      top: 4%;
+      font-size: 400%;
+      text-shadow: 0 1px 0 rgba(var(--title-depth-color), 1), 0 2px 0 rgba(var(--title-depth-color), 1), 0 3px 0 rgba(var(--title-depth-color), 1), 0 4px 0 rgba(var(--title-depth-color), 1), 0 5px 0 rgba(var(--title-depth-color), 1), 0 6px 0 rgba(var(--title-depth-color), 1), 0 7px 0 rgba(var(--title-depth-color), 1), 0 8px 0 rgba(var(--title-depth-color), 1), 0 9px 0 rgba(var(--title-depth-color), 1), 0 30px 30px rgba(var(--title-color), 0.3);
+    }
+  }
+
+  @keyframes text-pop-up-top {
+    0% {
+      top: 50%;
+    }
+    100% {
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+      top: 4%;
+      font-size: 400%;
+      text-shadow: 0 1px 0 rgba(var(--title-depth-color), 1), 0 2px 0 rgba(var(--title-depth-color), 1), 0 3px 0 rgba(var(--title-depth-color), 1), 0 4px 0 rgba(var(--title-depth-color), 1), 0 5px 0 rgba(var(--title-depth-color), 1), 0 6px 0 rgba(var(--title-depth-color), 1), 0 7px 0 rgba(var(--title-depth-color), 1), 0 8px 0 rgba(var(--title-depth-color), 1), 0 9px 0 rgba(var(--title-depth-color), 1), 0 30px 30px rgba(var(--title-color), 0.3);
+    }
+  }
+
+
+  @-webkit-keyframes push-upward {
+    0% {
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+      top: 4%;
+      font-size: 400%;
+      text-shadow: 0 1px 0 rgba(var(--title-depth-color), 1), 0 2px 0 rgba(var(--title-depth-color), 1), 0 3px 0 rgba(var(--title-depth-color), 1), 0 4px 0 rgba(var(--title-depth-color), 1), 0 5px 0 rgba(var(--title-depth-color), 1), 0 6px 0 rgba(var(--title-depth-color), 1), 0 7px 0 rgba(var(--title-depth-color), 1), 0 8px 0 rgba(var(--title-depth-color), 1), 0 9px 0 rgba(var(--title-depth-color), 1), 0 30px 30px rgba(var(--title-color), 0.3);
+    }
+    100% {
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+      top: 1%;
+      font-size: 350%;
+      text-shadow: 0 1px 0 rgba(var(--title-depth-color), 1), 0 2px 0 rgba(var(--title-depth-color), 1), 0 3px 0 rgba(var(--title-depth-color), 1), 0 4px 0 rgba(var(--title-depth-color), 1), 0 5px 0 rgba(var(--title-depth-color), 1), 0 6px 0 rgba(var(--title-depth-color), 1), 0 7px 0 rgba(var(--title-depth-color), 1), 0 8px 0 rgba(var(--title-depth-color), 1), 0 9px 0 rgba(var(--title-depth-color), 1), 0 30px 30px rgba(var(--title-color), 0.3);
+    }
+  }
+
+  @keyframes push-upward {
+    0% {
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+      top: 4%;
+      font-size: 400%;
+      text-shadow: 0 1px 0 rgba(var(--title-depth-color), 1), 0 2px 0 rgba(var(--title-depth-color), 1), 0 3px 0 rgba(var(--title-depth-color), 1), 0 4px 0 rgba(var(--title-depth-color), 1), 0 5px 0 rgba(var(--title-depth-color), 1), 0 6px 0 rgba(var(--title-depth-color), 1), 0 7px 0 rgba(var(--title-depth-color), 1), 0 8px 0 rgba(var(--title-depth-color), 1), 0 9px 0 rgba(var(--title-depth-color), 1), 0 30px 30px rgba(var(--title-color), 0.3);
+    }
+    100% {
+      -webkit-transform: translate(-50%, 0%);
+              transform: translate(-50%, 0%);
+      top: 1%;
+      font-size: 350%;
+      text-shadow: 0 1px 0 rgba(var(--title-depth-color), 1), 0 2px 0 rgba(var(--title-depth-color), 1), 0 3px 0 rgba(var(--title-depth-color), 1), 0 4px 0 rgba(var(--title-depth-color), 1), 0 5px 0 rgba(var(--title-depth-color), 1), 0 6px 0 rgba(var(--title-depth-color), 1), 0 7px 0 rgba(var(--title-depth-color), 1), 0 8px 0 rgba(var(--title-depth-color), 1), 0 9px 0 rgba(var(--title-depth-color), 1), 0 30px 30px rgba(var(--title-color), 0.3);
+    }
+  }
+}
+
+/*
+
+    ===================
+    TABLET ONLY CHANGES
+    ===================
+
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #sign-desc {
+    font-size: 150%;
+  }
+
+  #formbox {
+    font-size: 125%;
+  }
+
+  #restart-form {
+    width: 30rem;
+  }
+}

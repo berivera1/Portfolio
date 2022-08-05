@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap" rel="stylesheet">
+    <title>HTML5 Game Reviews | CrossCode + Knightin'</title>
+  </head>
+  <body onresize="resizeFix()">
+    <div id="wrapper">
+      <div class="article-header"></div>
+      <div id="article-holder">
+        <div class="article-first article">
+          <div class="article-body">
+            <img src="img/crosscode.png">
+            <div class="article-text">
+              <div class="first-line">
+                <h2>CrossCode</h2>
+                <a href="http://www.cross-code.com/en/start" target="_blank">Play Game</a>
+              </div>
+	      <p>CrossCode is a 2D top-down RPG game made with Javascript and Impact JS. It utilizes the WASD control scheme and the mouse.</p>
+              <h3>The Good</h3>	
+	      <p>I enjoyed this game because of its smooth controls, a unique art style, a complete soundtrack, a gripping story, and it feels fun to play. Everything about the game feels polished, and it all comes together to make a very fun, enjoyable experience.</p>
+	      <h3>The Bad</h3>
+	      <p>The only aspect of the game that could be improved on is objective communication to the player. The initial tutorial is very straight-forward, but in the main area of the demo (the ship), it becomes easy as a player to get lost, and not much is done in terms of UI to guide the player in the right direction. Though exploring the ship is fun, I found myself getting lost and annoyed during my initial playthrough because there was no obvious indicator of where to go.</p>
+            </div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="article-body">
+            <img src="img/knightin.png">
+            <div class="article-text">
+              <div class="first-line">
+                <h2>Knightin'</h2>
+                <a href="https://wolod.itch.io/knightin" target="_blank">Play Game</a>
+              </div>
+	      <p>Knightin' is a 2D top-down Dungeon Crawler game made with Construct 2, an engine running off of HTML5 and Javascript.</p>
+	      <h3>The Good</h3>
+              <p>I enjoyed this game because of its vibrant color palette, smooth controls, and a good soundtrack. It has an easy to learn tutorial that integrates teaching the player main game mechanics with the game environment. This makes the entire process of learning the game feel natural, even on first playthrough.</p>
+	      <h3>The Bad</h3>
+	      <p>The game tries to create a unique mechanic by intergrating QR codes into its puzzles. Because this requires a phone, though, this ends up making these puzzles feel more like a chore than a fun mechanic. The game also suffers from a lack of a large range of enemies, and after a while the gameplay becomes repetitive.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p id="footer-text">&copy; Beck Rivera, 2019</p>
+      </div>
+    </div>
+    <script>
+      if(document.getElementById("wrapper").offsetHeight < window.innerHeight) {
+        document.getElementsByClassName("footer")[0].style.marginTop = window.innerHeight - document.getElementById("wrapper").offsetHeight - 25 + "px";
+      }
+      function resizeFix() {
+        document.getElementsByClassName("footer")[0].style.marginTop = 0 + "px";
+        if(document.getElementById("wrapper").offsetHeight < window.innerHeight) {
+          document.getElementsByClassName("footer")[0].style.marginTop = window.innerHeight - document.getElementById("wrapper").offsetHeight + 19 + "px";
+        }
+
+      }
+    </script>
+  </body>
+</html>

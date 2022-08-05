@@ -1,0 +1,7 @@
+<svg version="1.1" id="Search-SVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 292 292" xml:space="preserve">
+	<style type="text/css">
+		.search-svg-icon{fill:none;stroke:#F7F8FF;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	</style>
+	<circle class="search-svg-icon" cx="118.7" cy="113.9" r="95"/>
+	<line class="search-svg-icon" x1="267.9" y1="272.6" x2="183.6" y2="183.2"/>
+</svg>

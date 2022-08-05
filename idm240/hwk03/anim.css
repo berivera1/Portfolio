@@ -1,0 +1,7 @@
+@keyframes distortionEffect {
+  0% { filter: url('#dist-a'); }
+  25% { filter: url('#dist-b'); }
+  50% { filter: url('#dist-c'); }
+  75% { filter: url('#dist-d'); }
+  100% { filter: url('#dist-e'); }
+}

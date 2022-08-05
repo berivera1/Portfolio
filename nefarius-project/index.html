@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.typekit.net/gvl1eye.css">
+    <link rel="stylesheet" href="css/astrology.css">
+    <link rel="stylesheet" href="css/astrologyanim.css">
+    <link rel="stylesheet" href="css/astrologymedia.css">
+    <link rel="shortcut icon" href="img/logo/favicon.ico">
+    <title>Nefari'us</title>
+  </head>
+  <body>
+    <div class="overflow-helper">
+      <div id="background-gradient" class="background background-animation"></div>
+      <p id="nefa-title" class="title center text-flicker-and-push">NEFARI'US</p>
+      <div class="starting-content">
+        <img id="skip-btn"  class="fade-out-with-delay" src="img/skip.png"></img>
+        <p class="center fade-in" id="description-text"><br /><br /><br /><br /><br /><br /><br /><br /><br />WHICH NOTORIOUS CRIMINAL MASTERMIND ARE YOU?</p>
+        <div class="center fade-in" id="formbox">
+          <div id="dob-form" class="child">
+            <label id="month-label">WHAT MONTH WERE YOU BORN?</label>
+              <select id = "month-list">
+                <option value = "1">JAN</option>
+                <option value = "2">FEB</option>
+                <option value = "3">MAR</option>
+                <option value = "4">APR</option>
+                <option value = "5">MAY</option>
+                <option value = "6">JUN</option>
+                <option value = "7">JUL</option>
+                <option value = "8">AUG</option>
+                <option value = "9">SEP</option>
+                <option value = "10">OCT</option>
+                <option value = "11">NOV</option>
+                <option value = "12">DEC</option>
+              </select>
+            <br /><br />
+            <label id="day-label">WHAT DAY WERE YOU BORN?</label>
+            <br />
+              <input type="number" id="day-select" name="day-select" value="1" min="1" max="31">
+            <br /><br />
+            <a href="#" class="btn" id="submit-btn">SUBMIT</a>
+          </div>
+          <div class="vl"></div>
+          <div id="explore" class="child">
+            <label>OR...FEEL FREE TO EXPLORE THE<br />PROGRAM WITHOUT ENTERING<br />YOUR B-DAY.</label>
+            <br /><br />
+            <a href="#" class="btn" id="explore-btn">EXPLORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="on-click-content">
+        <div class="gridbox" id="grd-zodiac-wheel">
+          <div class="sign-title">
+            <p id="sign-name"></p>
+            <p id="sign-dates"></p>
+            <p id="criminal-name"></P>
+          </div>
+        </div>
+      </div>
+      <div class="followup-content gridbox" id="sign-info">
+        <p id="sign-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p id="new-date"> PICK A NEW DATE:</p>
+        <div id="restart-form" class="child grid">
+          <select id = "month-restart-list">
+            <option value = "1">JAN</option>
+            <option value = "2">FEB</option>
+            <option value = "3">MAR</option>
+            <option value = "4">APR</option>
+            <option value = "5">MAY</option>
+            <option value = "6">JUN</option>
+            <option value = "7">JUL</option>
+            <option value = "8">AUG</option>
+            <option value = "9">SEP</option>
+            <option value = "10">OCT</option>
+            <option value = "11">NOV</option>
+            <option value = "12">DEC</option>
+          </select>
+          <input type="number" id="day-restart-select" name="day-select" value="1" min="1" max="31">
+          <a href="#" class="btn" id="resubmit-btn">SUBMIT</a>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "js/astrology.js"></script>
+  </body>
+</html>

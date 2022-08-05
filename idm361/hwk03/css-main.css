@@ -1,0 +1,78 @@
+body {
+	background-color:#0EDACE;
+}
+
+#wireframes-div {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#wireframes-div img {
+	max-width: 540px;
+}
+
+#content {
+	height: auto;
+	margin: 10px auto;
+	max-width: 75%;
+	max-height: 90%;
+	font-size: 1.5em;
+}
+
+#portpic {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+}
+
+#landpic {
+	width: 100%;
+	max-width: 100%;
+	display: none;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+#output {
+	text-align: center;
+}
+
+@media only screen and (orientation:portrait) {
+	body {
+		background-color: #0EDACE;
+	}
+	#portpic {
+		display: block;
+	}
+	#landpic {
+		display: none;
+	}
+	#output:after {
+		content: "Turn your device to drink the soda.";
+	}
+}
+
+@media only screen and (orientation:landscape) {
+	body {
+		background-color: #F1F1EE;
+	}
+	#content {
+		max-width: 70%;
+	}
+	#portpic {
+		display: none;
+	}
+	#landpic {
+		display: block;
+	}
+	#output:after {
+		content: "Uh oh, you spilled the soda!";
+	}
+}
+
+@media only screen and (max-aspect-ratio: 1/2) {
+	#content {
+		max-width: 58%;
+	}
+}

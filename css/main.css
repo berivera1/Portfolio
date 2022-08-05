@@ -1,0 +1,1387 @@
+html {
+
+  --main-bg-color: #484848;
+
+  --sec-bg-color: #FFFFFF;
+
+  --ter-bg-color: #e48912;
+
+
+
+  --section-bg-color: #484848;
+
+  --wp-proj-bg-color: #000000;
+
+  --bn-proj-bg-color: #1e73be;
+
+  --veer-proj-bg-color: #422B67;
+
+  --crp-proj-bg-color: #485356;
+
+  --tf-proj-bg-color: #000;
+
+  --aeat-proj-bg-color: #4169e1;
+
+  --opn-proj-bg-color: #888888;
+
+  --nfrs-proj-bg-color: #E73C7E;
+
+  --wtti-proj-bg-color: #3693d9;
+
+  --ma-proj-bg-color: #ce0f58;
+
+  --ta-proj-bg-color: #484848;
+
+  --sfkz-proj-bg-color: #6f2da8;
+
+  --nwz-proj-bg-color: #FF0000;
+
+  --nw-proj-bg-color: #0083ab;
+
+  --dod-proj-bg-color: #040404;
+
+  --pwrd-proj-bg-color: #666;
+
+  --gc-proj-bg-color: #555;
+
+  --cc-proj-bg-color: #993fa6;
+
+
+
+  background-color: var(--main-bg-color);
+
+
+
+  font-family: "futura-pt" !important;
+
+  font-size: 100%;
+
+
+
+  display: block;
+
+  overflow: hidden;
+
+
+
+  transition: 0.3s ease-in-out;
+
+}
+
+h1, h3 {
+
+  color: var(--sec-bg-color);
+
+  text-align: center;
+
+}
+
+h3 {
+
+  font-weight: 300;
+
+  padding-top: 1rem;
+
+  width: 60%;
+
+}
+
+.article-title {
+
+  color: var(--sec-bg-color);
+
+  text-align: center;
+
+  font-size: 3rem;
+
+}
+
+html, body {
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+
+
+img {
+
+  overflow: visible;
+
+}
+
+
+
+a {
+
+  text-decoration: none;
+
+  color: var(--sec-bg-color);
+
+
+
+  transition: 0.3s ease-in-out;
+
+}
+
+
+
+a:hover {
+
+  opacity: 0.6;
+
+}
+
+
+
+.proj-arrow {
+
+  transition: 0.3s ease-in-out !important;
+
+}
+
+
+
+.proj-arrow:hover {
+
+  opacity: 0.6 !important;
+
+}
+
+
+
+@font-face {
+
+   font-family: futura-xblk;
+
+   src: url(fonts/futura-xblk-bt.ttf);
+
+}
+
+
+
+/*
+
+
+
+    ====================
+
+    SPLASH SCREEN STYLES
+
+    ====================
+
+
+
+*/
+
+
+
+.starting-div {
+
+  position: fixed;
+
+
+
+  width: 100vw;
+
+  height: 100vh;
+
+
+
+  z-index: 75;
+
+
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  background-color: var(--main-bg-color);
+
+
+
+  animation: fade-out 1s ease-out 3.5s both;
+
+}
+
+
+
+.skip-splash {
+
+  position: fixed;
+
+
+
+  width: 100vw;
+
+  height: 100vh;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  background-color: var(--main-bg-color);
+
+
+
+  animation: fade-out 1s ease-out both;
+
+}
+
+
+
+#full-name-logo {
+
+  width: 40%;
+
+  transform: translateX(6.75%);
+
+  padding-right: 5%;
+
+  animation: focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+
+}
+
+
+
+#welcome-txt {
+
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.0s both;
+
+  display: block;
+
+}
+
+
+
+#skip-btn-img {
+
+  position: absolute;
+
+  top: 2%;
+
+  right: 1%;
+
+  width: 3rem;
+
+
+
+  transition: 0.3s ease-in-out;
+
+  animation: focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+}
+
+
+
+/*
+
+
+
+    =============
+
+    MAIN DIV GRID
+
+    =============
+
+
+
+*/
+
+
+
+.grid {
+
+  display: grid;
+
+  justify-items: center;
+
+  align-items: center;
+
+}
+
+
+
+#main-grid {
+
+  width: 100vw;
+
+  height: 100vh;
+
+  grid-template: repeat(10, 10vh) / repeat(20, 5vw);
+
+  grid-template-areas:
+
+  "sidenav . . . . . . . . . . . . . . . . logo logo ."
+
+  "sidenav . . . . . . . . . . . . . . . . logo logo ."
+
+  "sidenav . . . . . . . . . . . . . . . . . . ."
+
+  "sidenav . . . . . . . . . . . . . . . . . . ."
+
+  "sidenav . title-card title-card title-card title-card title-card title-card title-card title-card . . . . . . . . . ."
+
+  "sidenav . title-card title-card title-card title-card title-card title-card title-card title-card . . . . . . . . . ."
+
+  "sidenav . . . . . . . . . . . . . . . . . . ."
+
+  "sidenav . . . . . . . . . . . . . . . . . . ."
+
+  "sidenav . . . . . . . . . . . . . . . . . . ."
+
+  "sidenav . . . . . . . . . . . . . . . . . . .";
+
+}
+
+
+
+#logo {
+
+  z-index: 50;
+
+  grid-area: logo;
+
+  justify-self: start;
+
+}
+
+
+
+#bear-logo {
+
+  width: 12rem;
+
+}
+
+
+
+.main-txt {
+
+  font-family: "futura-xblk" !important;
+
+  font-size: 450%;
+
+  color: var(--sec-bg-color);
+
+}
+
+
+
+.landing-txt {
+
+  justify-self: start;
+
+}
+
+
+
+#title-card {
+
+  grid-area: title-card;
+
+}
+
+
+
+#explore-btn {
+
+  transition: 0.3s ease-in-out;
+
+}
+
+
+
+#explore-btn-txt {
+
+  transition: 0.3s ease-in-out;
+
+}
+
+
+
+#explore-btn:hover #explore-btn-pic {
+
+  animation: jello-horizontal 0.9s ease-in-out both;
+
+}
+
+
+
+.jello:hover {
+
+  animation: jello-horizontal 0.9s ease-in-out both;
+
+}
+
+
+
+#explore-btn-pic {
+
+  width: 2.25rem;
+
+}
+
+
+
+/*
+
+
+
+    ================
+
+    SIDENAV DIV GRID
+
+    ================
+
+
+
+*/
+
+
+
+#sidenav {
+
+  background-color: var(--sec-bg-color);
+
+  grid-area: sidenav;
+
+  width: 100%;
+
+  height: 100%;
+
+
+
+  grid-template-rows: repeat(10, 10vh);
+
+  grid-template-areas:
+
+  "hamburger"
+
+  "."
+
+  "."
+
+  "."
+
+  "."
+
+  "proj-up"
+
+  "cur"
+
+  "sep"
+
+  "last"
+
+  "proj-down";
+
+}
+
+
+
+#hamburger {
+
+  grid-area: hamburger;
+
+}
+
+
+
+#hamburger-icon {
+
+  width: 3rem;
+
+}
+
+
+
+.sidenav-proj-scroll {
+
+  opacity: 0;
+
+  display: none;
+
+}
+
+
+
+.sidenav-txt {
+
+  color: var(--main-bg-color);
+
+  font-size: 250%;
+
+}
+
+
+
+#proj-up {
+
+  grid-area: proj-up;
+
+}
+
+
+
+#proj-up-icon {
+
+  width: 1.5rem;
+
+  transform: rotate(-90deg);
+
+}
+
+
+
+#proj-down {
+
+  grid-area: proj-down;
+
+}
+
+
+
+#proj-down-icon {
+
+  width: 1.5rem;
+
+  transform: rotate(90deg);
+
+}
+
+
+
+#cur {
+
+  grid-area: cur;
+
+}
+
+
+
+#end {
+
+  grid-area: last;
+
+}
+
+
+
+#sep {
+
+  grid-area: sep;
+
+  width: 45%;
+
+
+
+  border: 0.2rem solid var(--main-bg-color);
+
+  border-radius: 30px;
+
+}
+
+
+
+/*
+
+
+
+    ==================
+
+    POP-UP MENU STYLES
+
+    ==================
+
+
+
+*/
+
+
+
+.menu {
+
+  position: fixed;
+
+  width: 0;
+
+  height: 100vh;
+
+
+
+  background-color: var(--sec-bg-color);
+
+}
+
+
+
+#main-menu {
+
+  z-index: -5;
+
+  grid-template: repeat(10, 10vh) / repeat(20, 5vw);
+
+  grid-template-areas:
+
+  "exit . . . . . . . . . . . . . . . . logo logo logo"
+
+  ". . . . . . . . . . . . . . . . . logo logo logo"
+
+  ". . . . . . . . . home home . . . . . . . . ."
+
+  ". . . . . . . . . . . . . . . . . . . ."
+
+  ". . . . . . . . . about about . . . . . . . . ."
+
+  ". . . . . . . . . . . . . . . . . . . ."
+
+  ". . . . . . . . . work work . . . . . . . . ."
+
+  ". . . . . . . . . . . . . . . . . . . ."
+
+  ". . . . . . . . social social social social . . . . . . . ."
+
+  ". . . . . . . . . . . . . . . . . . . .";
+
+
+
+  opacity: 0;
+
+  transition: 0.5s ease-in-out;
+
+}
+
+
+
+#exit-btn {
+
+  grid-area: exit;
+
+}
+
+
+
+#exit-btn-img {
+
+  width: 3rem;
+
+}
+
+
+
+#logo-white {
+
+  grid-area: logo;
+
+}
+
+
+
+#bear-logo-white {
+
+  width: 8rem;
+
+}
+
+
+
+.menu-txt {
+
+  color: var(--main-bg-color);
+
+  font-size: 400%;
+
+}
+
+
+
+#home {
+
+  grid-area: home;
+
+  align-self: center;
+
+}
+
+
+
+#about {
+
+  grid-area: about;
+
+  align-self: center;
+
+}
+
+
+
+#work {
+
+  grid-area: work;
+
+  align-self: center;
+
+}
+
+
+
+#contact {
+
+  grid-area: contact;
+
+  align-self: center;
+
+}
+
+
+
+#social-icons {
+
+  transform: translateZ(-800px) rotateY(90deg);
+
+
+
+  grid-area: social;
+
+  align-self: end;
+
+
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: start;
+
+
+
+  width: 100%;
+
+  height: 50%;
+
+}
+
+
+
+.social-icon {
+
+  margin: 1rem;
+
+  width: 4rem;
+
+}
+
+
+
+/*
+
+
+
+    =====================
+
+    POP-UP MENU'S POP-UPS
+
+    =====================
+
+
+
+*/
+
+
+
+#vl {
+
+  position: fixed;
+
+  top: 10%;
+
+  left: 30%;
+
+  height: 80vh;
+
+
+
+  border-radius: 20px;
+
+  border-width: thick;
+
+
+
+  border-style: solid;
+
+  border-color: var(--main-bg-color);
+
+
+
+  opacity: 0;
+
+}
+
+
+
+.abt-and-cnt-desc {
+
+  position: fixed;
+
+  top: 10%;
+
+  left: 38%;
+
+  height: 80vh;
+
+  width: 65vw;
+
+
+
+  color: var(--main-bg-color);
+
+
+
+  font-size: 200%;
+
+
+
+  z-index: -5;
+
+  opacity: 0;
+
+}
+
+
+
+.abt-cnt-dsc-txt {
+
+  padding-right: 12vw;
+
+}
+
+
+
+.in-menu-title {
+
+  font-family: futura-xblk;
+
+  font-size: 200%;
+
+  margin-top: 0;
+
+}
+
+
+
+.dark-link {
+
+  color: var(--ter-bg-color);
+
+  cursor: pointer;
+
+}
+
+
+
+.input-field {
+
+  width: 80%;
+
+}
+
+
+
+#contact-form {
+
+  width: 80%;
+
+}
+
+
+
+.input-field {
+
+  font-family: "futura-pt";
+
+  font-size: 60%;
+
+
+
+  margin: 1%;
+
+  padding: 1% 2.5%;
+
+  background-color: rgba(0, 0, 0, 0);
+
+
+
+  border: 8px solid var(--main-bg-color);
+
+  border-radius: 50px;
+
+}
+
+
+
+#input-message {
+
+  height: 20vh;
+
+  margin-bottom: 3%;
+
+  resize: none;
+
+}
+
+
+
+textarea:required {
+
+    box-shadow:none;
+
+}
+
+
+
+#submit-button {
+
+  font-family: futura-xblk;
+
+  font-size: 80%;
+
+
+
+  background-color: var(--main-bg-color);
+
+  color: var(--sec-bg-color);
+
+
+
+  padding: 1vh 1vw;
+
+  border: 0;
+
+  border-radius: 30px;
+
+
+
+  cursor: pointer;
+
+
+
+  transition: 0.3s ease-in-out;
+
+}
+
+
+
+#submit-button:hover {
+
+  opacity: 0.6;
+
+}
+
+
+
+/*
+
+
+
+    ==================
+
+    PROJECT DIV STYLES
+
+    ==================
+
+
+
+*/
+
+
+
+.project-display {
+
+  position: absolute;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+
+
+  width: 95vw;
+
+  height: 100vh;
+
+  z-index: 10;
+
+  right: 0%;
+
+
+
+  transition: 0.5s ease-in-out;
+
+}
+
+.proj-desc-link {
+  color: #e48912;
+}
+
+.proj-logo-link {
+
+  width: 50rem;
+
+  filter: drop-shadow(0px 12px 12px rgba(0,0,0,0.5));
+
+  margin-bottom: 1rem;
+
+}
+
+.proj-logo-img {
+
+  display: block;
+
+  width: 70%;
+
+  margin: auto;
+
+}
+
+
+
+#section-01-titlescreen {
+
+  top: 100vh;
+
+  background-color: var(--section-bg-color);
+
+}
+
+#wp-project {
+
+  top: 200vh;
+
+  background-color: var(--wp-proj-bg-color);
+
+}
+
+#bn-project {
+
+  top: 300vh;
+
+  background-color: var(--bn-proj-bg-color);
+
+}
+
+#section-02-titlescreen {
+
+  top: 400vh;
+
+  background-color: var(--section-bg-color);
+
+}
+
+#veer-project {
+
+  top: 500vh;
+
+  background-color: var(--veer-proj-bg-color);
+
+}
+
+#crp-project {
+
+  top: 600vh;
+
+  background-color: var(--crp-proj-bg-color);
+
+}
+
+#tf-project {
+
+  top: 700vh;
+
+  background-color: var(--tf-proj-bg-color);
+
+}
+
+#aeat-project {
+
+  top: 800vh;
+
+  background-color: var(--aeat-proj-bg-color);
+
+}
+
+#opn-project {
+
+  top: 900vh;
+
+  background-color: var(--opn-proj-bg-color);
+
+}
+
+#nfrs-project {
+
+  top: 1000vh;
+
+  background-color: var(--nfrs-proj-bg-color);
+
+}
+
+#section-03-titlescreen {
+
+  top: 1100vh;
+
+  background-color: var(--section-bg-color);
+
+}
+
+#wtti-project {
+    top: 1200vh;
+    background-color: var(--wtti-proj-bg-color);
+}
+
+#ma-project {
+
+  top: 1300vh;
+
+  background-color: var(--ma-proj-bg-color);
+
+}
+
+#ta-project {
+
+  top: 1400vh;
+
+  background-color: var(--ta-proj-bg-color);
+
+}
+
+#sfkz-project {
+
+  top: 1500vh;
+
+  background-color: var(--sfkz-proj-bg-color);
+
+}
+
+#nwz-project {
+
+  top: 1600vh;
+
+  background-color: var(--nwz-proj-bg-color);
+
+}
+
+#nw-project {
+
+  top: 1700vh;
+
+  background-color: var(--nw-proj-bg-color);
+
+}
+
+#section-04-titlescreen {
+
+  top: 1800vh;
+
+  background-color: var(--section-bg-color);
+
+}
+
+#dod-project {
+
+  top: 1900vh;
+
+  background-color: var(--dod-proj-bg-color);
+
+}
+
+#dod-logo {
+    
+  width: 50% !important;
+
+}
+
+#pwrd-project {
+
+  top: 2000vh;
+
+  background-color: var(--pwrd-proj-bg-color);
+
+}
+
+#gc-project {
+
+  top: 2100vh;
+
+  background-color: var(--gc-proj-bg-color);
+
+}
+
+#cc-project {
+
+  top: 2200vh;
+
+  background-color: var(--cc-proj-bg-color);
+
+}
+
+
+
+/*
+
+
+
+    ==============
+
+    SITE CONTAINER
+
+    ==============
+
+
+
+*/
+
+
+
+.overflow-helper {
+
+  top: 0;
+
+  left: 0;
+
+  bottom: 0;
+
+  right: 0;
+
+
+
+  padding: 0;
+
+  margin: 0;
+
+
+
+  position: absolute;
+
+  overflow: hidden;
+
+
+
+  z-index: -100;
+
+}
+
+
+
+/*
+
+
+
+    ==========
+
+    ANIMATIONS
+
+    ==========
+
+
+
+*/
+
+
+
+.push-right {
+
+  animation: push-right 0.5s ease-in-out forwards;
+
+}
+
+
+
+.pop-left {
+
+  animation: pop-left 0.5s ease-in-out forwards;
+
+}
+
+
+
+.pop-menu-left {
+
+  animation: pop-menu-left 0.5s ease-in-out forwards;
+
+}
+
+
+
+.pop-menu-left-social {
+
+  animation: pop-menu-left-social 0.5s ease-in-out forwards !important;
+
+}
+
+
+
+.slit-in {
+
+  animation: slit-in-vertical 0.45s ease-out forwards;
+
+}
+
+
+
+.slit-out {
+
+  animation: slit-out-vertical 0.45s ease-out forwards;
+
+}
+
+
+
+.fade-in {
+
+  animation: fade-in 0.75s ease 0.5s forwards;
+
+}
+
+
+
+.fade-out {
+
+  animation: fade-out-alt 0.75s ease 0.5s forwards;
+
+}
+
+
+
+.swirl-in {
+
+  animation: swirl-in 0.6s ease-out forwards;
+
+}
+
+
+
+.swirl-out {
+
+  animation: swirl-out 0.6s ease-out forwards;
+
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Oneohtrix Point Never | Union Transfer | 09-12-2019</title>
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <audio id="audioplayer" src="sound/format-journey-north.mp3" >
+  			Your LAME browser does not support HTML5 audio!
+  		</audio>
+      <div id="lineart-svg-container">
+        <svg id="lineart-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 600">
+        <defs>
+            <style>
+              .lineart {
+                filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+                fill: none;
+                stroke: #999;
+                stroke-linecap: round;
+                stroke-width: 5px;
+              }
+            </style>
+          </defs>
+          <path id="right-short" class="lineart" d="M273,509V139l66,65"/>
+          <path id="right-long" class="lineart" d="M251,547V144l80,88,9-28,173-68L337,15,271,61,222,20"/>
+          <path id="mid" class="lineart" d="M233,105V580"/>
+          <path id="left-lower-short" class="lineart" d="M141,167l46,55"/>
+          <path id="left-lower-long" class="lineart" d="M87,109l14,39,17-40h32l37,17V507"/>
+          <path id="left-upper" class="lineart" d="M28,25L82,69l54-44,83,45,40-50"/>
+        </svg>
+      </div>
+      <div class="opn-title">
+        <div class="spaced-out-txt">
+          <div id="gsTitle">
+          	<div class="gsTitle-title">ONEOHTRIX</div>
+          	<div class="gsTitle-title gsTitle-color gsTitle-color-leftmost gsTitle-a"></div>
+          	<div class="gsTitle-title gsTitle-color gsTitle-color-leftmost gsTitle-b"></div>
+          </div>
+        </div>
+        <div class="light-txt">
+          <div id="gsTitle2">
+            <div class="gsTitle-title">POINT</div>
+            <div class="gsTitle-title gsTitle-color gsTitle-color-row-b gsTitle-a"></div>
+            <div class="gsTitle-title gsTitle-color gsTitle-color-row-b gsTitle-b"></div>
+          </div>
+        </div>
+        <div id="gsTitle3">
+          <div class="gsTitle-title">NEVER</div>
+          <div class="gsTitle-title gsTitle-color gsTitle-color-row-b gsTitle-a"></div>
+          <div class="gsTitle-title gsTitle-color gsTitle-color-row-b gsTitle-b"></div>
+        </div>
+      </div>
+      <!-- <p class="opn-title"><span class="spaced-out-txt">ONEOHTRIX</span><br><span class="light-txt">POINT</span>NEVER</p> -->
+      <div class="great-wave" id="great-wave"></div>
+      <div class="tape-recorder">
+        <img src="img/tp/tp_bg.png" class="body">
+        <div class="wheel wheel-left">
+          <img src="img/tp/tp_wheel_bg.png" class="wheel-int wheel-bg">
+          <img src="img/tp/tp_wheel_outline.png" class="wheel-int wheel-outline">
+        </div>
+        <div class="wheel wheel-right">
+          <img src="img/tp/tp_wheel_bg.png" class="wheel-int wheel-bg">
+          <img src="img/tp/tp_wheel_outline.png" class="wheel-int wheel-outline">
+        </div>
+      </div>
+      <div class="left-links">
+        <a href="https://utphilly.com/" class="desc-txt-n-links left-link-indiv" id="tickets" target="_blank">TICKETS</a>
+        <a href="http://www.pointnever.com/" class="desc-txt-n-links left-link-indiv" id="artist" target="_blank">ARTIST</a>
+        <a href="https://www.google.com/maps/dir//Union+Transfer,+Spring+Garden+Street,+Philadelphia,+PA/@39.9614481,-75.190343,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x89c6c7d5903f683d:0x8eb08c7aee44773d!2m2!1d-75.1553236!2d39.9613876!3e2" class="desc-txt-n-links left-link-indiv" id="directions" target="_blank">DIRECTIONS</a>
+      </div>
+      <p class="desc-txt-n-links" id="concert-info">09 &middot; 12 &middot; 2019 &middot; 7 PM<br>Union Transfer<br>Philadelphia, PA</p>
+      <a href="#" class="desc-txt-n-links" id="mute-btn" onclick="audioToggle();">
+        <span class="txt-rotate" data-rotateto='[ "P L A Y" ]' date-rotatefrom = '[ "P L A Y" ]'>P L A Y</span>
+      </a>
+      <p class="copyright">Audio &copy; Oneohtrix Point Never, 2009</p>
+    </div>
+    <script src="anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/PixiPlugin.min.js"></script>
+    <script src="https://pixijs.download/v4.8.8/pixi.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

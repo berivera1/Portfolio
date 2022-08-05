@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>NeuroWarriors: Zero || Game</title>
+  <!--Add Phaser Framework library-->
+  <script src="phaser.min.js"></script>
+  <!--Add custom stylesheet-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="phaser-canvas"></div>
+  <!--Custom Javascript-->
+  <script type="text/javascript">
+    window.onload = function() {
+      var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas', {
+        preload: preload,
+        create: create
+      });
+      WebFontConfig = {
+          //  'active' means all requested fonts have finished loading
+          //  We set a 1 second delay before calling 'createText'.
+          //  For some reason if we don't the browser cannot render the text the first time it's created.
+          active: function() { game.time.events.add(Phaser.Timer.SECOND, createText, this); },
+          //  The Google Fonts we want to load (specify as many as you like in the array)
+          google: {
+            // Concatonate multi-word font names w/ + sign, like 'Zilla+Slab'
+            families: ['VT323']
+          }
+      };
+      function preload() {
+        game.load.image('logo', 'img/logo.png');
+        game.load.image('background', 'img/background-skewed.png');
+        game.load.image('heartfull', 'img/heart-full.png');
+        game.load.image('heartempty', 'img/heart-empty.png');
+        game.load.image('p1bullet', 'img/a-bullet.png');
+        game.load.image('p2bullet', 'img/b-bullet.png');
+        game.load.spritesheet('p1', 'img/a-slime.png', 80, 75, 3);
+        game.load.spritesheet('p2', 'img/b-slime.png', 80, 75, 3);
+        game.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
+      }
+      function create() {
+        // Add images to stage
+        var spBackground = game.add.sprite(game.world.centerX, game.world.centerY, 'background');
+        spBackground.anchor.setTo(0.5, 0.5);
+
+        // P1 + P2
+
+        var spP1 = game.add.sprite(128, 453, 'p1');
+        spP1.anchor.setTo(0.5, 0.5);
+        spP1.animations.add('walk');
+        spP1.animations.play('walk', 2, true);
+        spP1.animations.currentAnim.speed = 4;
+
+        var spP1HeartA = game.add.sprite(82, 406, 'heartfull');
+        spP1HeartA.scale.x *= 0.6;
+        spP1HeartA.scale.y *= 0.6;
+        var spP1HeartB = game.add.sprite(112, 406, 'heartfull');
+        spP1HeartB.scale.x *= 0.6;
+        spP1HeartB.scale.y *= 0.6;
+        var spP1HeartC = game.add.sprite(142, 406, 'heartempty');
+        spP1HeartC.scale.x *= 0.6;
+        spP1HeartC.scale.y *= 0.6;
+
+        var spP2 = game.add.sprite(763, 246, 'p2');
+        spP2.scale.x *= -1;
+        spP2.anchor.setTo(0.5, 0.5);
+        spP2.animations.add('walk');
+        spP2.animations.play('walk', 2, true);
+        spP2.animations.currentAnim.speed = 4;
+
+        var spP2HeartA = game.add.sprite(717, 199, 'heartfull');
+        spP2HeartA.scale.x *= 0.6;
+        spP2HeartA.scale.y *= 0.6;
+        var spP2HeartB = game.add.sprite(747, 199, 'heartfull');
+        spP2HeartB.scale.x *= 0.6;
+        spP2HeartB.scale.y *= 0.6;
+        var spP2HeartC = game.add.sprite(777, 199, 'heartfull');
+        spP2HeartC.scale.x *= 0.6;
+        spP2HeartC.scale.y *= 0.6;
+
+        // Projectiles
+
+        var p1BulletA = game.add.sprite(572, 572, 'p1bullet');
+        var p1BulletB = game.add.sprite(793, 037, 'p1bullet');
+
+        var p2BulletA = game.add.sprite(24, 456, 'p2bullet');
+        var p2BulletB = game.add.sprite(126, 054, 'p2bullet');
+        var p2BulletC = game.add.sprite(465, 179, 'p2bullet');
+
+        // Add button
+        // The numbers given in par are indexes of the frame in this order:
+        // OVER, OUT, DOWN
+      }
+      function createText () {
+        // Text
+
+        var textFirst = "01:37";
+        var generalStyle = {
+          width: "150px",
+          font: "62px VT323",
+          fill: "white",
+          align: "center"
+        };
+        var txTitle = game.add.text(game.world.centerX, 50, textFirst, generalStyle);
+        txTitle.anchor.setTo(0.5, 0.5);
+      }
+    } // end window.onload
+  </script>
+</body>
+</html>

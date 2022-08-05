@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>NeuroWarriors: Zero || Intro</title>
+  <!--Add Phaser Framework library-->
+  <script src="phaser.min.js"></script>
+  <!--Add custom stylesheet-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="phaser-canvas"></div>
+  <!--Custom Javascript-->
+  <script type="text/javascript">
+    window.onload = function() {
+      var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas', {
+        preload: preload,
+        create: create
+      });
+      WebFontConfig = {
+          //  'active' means all requested fonts have finished loading
+          //  We set a 1 second delay before calling 'createText'.
+          //  For some reason if we don't the browser cannot render the text the first time it's created.
+          active: function() { game.time.events.add(Phaser.Timer.SECOND, createText, this); },
+          //  The Google Fonts we want to load (specify as many as you like in the array)
+          google: {
+            // Concatonate multi-word font names w/ + sign, like 'Zilla+Slab'
+            families: ['VT323']
+          }
+      };
+      function preload() {
+        game.load.image('logo', 'img/logo.png');
+        game.load.image('background', 'img/background.png');
+        game.load.image('heartfull', 'img/heart-full.png');
+        game.load.image('tear', 'img/tear.png');
+        game.load.image('trophy', 'img/trophy.png');
+        game.load.spritesheet('playButton', 'img/play-again-button.png', 308, 63);
+        game.load.spritesheet('menuButton', 'img/menu-button.png', 196, 63);
+        game.load.spritesheet('creditsButton', 'img/credits-button.png', 245, 63);
+        game.load.image('overlay', 'img/overlay.png');
+        game.load.spritesheet('yesButton', 'img/yes-button.png', 147, 63);
+        game.load.spritesheet('noButton', 'img/no-button.png', 126, 63);
+        game.load.spritesheet('p1', 'img/a-slime.png', 80, 75, 3);
+        game.load.spritesheet('p2', 'img/b-slime.png', 80, 75, 3);
+        game.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
+      }
+      function create() {
+        // Add images to stage
+        var spBackground = game.add.sprite(game.world.centerX, game.world.centerY, 'background');
+        spBackground.anchor.setTo(0.5, 0.5);
+
+        var spP1 = game.add.sprite(game.world.centerX-300, 275, 'p1');
+        spP1.anchor.setTo(0.5, 0.5);
+        spP1.animations.add('walk');
+        spP1.animations.play('walk', 2, true);
+        spP1.animations.currentAnim.speed = 4;
+
+        var spP2 = game.add.sprite(game.world.centerX+300, 275, 'p2');
+        spP2.scale.x *= -1;
+        spP2.anchor.setTo(0.5, 0.5);
+        spP2.animations.add('walk');
+        spP2.animations.play('walk', 2, true);
+        spP2.animations.currentAnim.speed = 3;
+
+        var spTear = game.add.sprite(780, 285, 'tear');
+
+        var trophy = game.add.sprite(130, 275, 'trophy');
+
+        // Add button
+        // The numbers given in par are indexes of the frame in this order:
+        // OVER, OUT, DOWN
+        var btPlay = game.add.button(game.world.centerX-150, game.world.centerY + 320, 'playButton', actionOnClick, this, 1, 0, 2);
+        btPlay.anchor.setTo(0.64, 0.5);
+        var btMenu = game.add.button(game.world.centerX+150, game.world.centerY + 320, 'menuButton', returnToMenu, this, 1, 0, 2);
+        btMenu.anchor.setTo(0.64, 0.5);
+      }
+      function createText () {
+        // Add text
+        var textWin = "P1 WINS!";
+        var textCounter = "Win Counter";
+        var textP1Wins = "x5";
+        var textP2Wins = "x2";
+        var textTimeLeft = "Time Left: 00:36";
+
+        var titleStyle = {
+          width: "150px",
+          font: "72px VT323",
+          fill: "#0fcacf",
+          align: "center"
+        };
+
+        var generalStyle = {
+          width: "150px",
+          font: "52px VT323",
+          fill: "white",
+          align: "center"
+        };
+        var textWin = game.add.text(game.world.centerX, 80, textWin, titleStyle);
+        textWin.anchor.setTo(0.5, 0.5);
+        var textCounter = game.add.text(game.world.centerX, 285, textCounter, generalStyle);
+        textCounter.anchor.setTo(0.5, 0.5);
+        var textP1Wins = game.add.text(game.world.centerX - 240, 265, textP1Wins, generalStyle);
+        var textP2Wins = game.add.text(game.world.centerX + 200, 265, textP2Wins, generalStyle);
+        var textTimeLeft = game.add.text(game.world.centerX, 460, textTimeLeft, generalStyle);
+        textTimeLeft.anchor.setTo(0.5, 0.5);
+      }
+      function actionOnClick() {
+        alert('A button Clicked');
+      }
+      function returnToMenu() {
+        var spOverlay = game.add.sprite(game.world.centerX, game.world.centerY, 'overlay');
+        spOverlay.anchor.setTo(0.5, 0.5);
+        var textQuestion = "Do you want to return to the\nmenu?\nThis will reset your current\nwin counter.";
+        var generalStyle = {
+          width: "150px",
+          font: "52px VT323",
+          fill: "white",
+          align: "center"
+        };
+        var textQuestion = game.add.text(game.world.centerX, 280, textQuestion, generalStyle);
+        textQuestion.anchor.setTo(0.5, 0.5);
+        var btYes = game.add.button(game.world.centerX-150, game.world.centerY+150, 'yesButton', actionOnClick, this, 1, 0, 2);
+        btYes.anchor.setTo(0.64, 0.5);
+        var btNo = game.add.button(game.world.centerX+150, game.world.centerY+150, 'noButton', actionOnClick, this, 1, 0, 2);
+        btNo.anchor.setTo(0.64, 0.5);
+      }
+    } // end window.onload
+  </script>
+</body>
+</html>

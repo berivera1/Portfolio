@@ -1,0 +1,35 @@
+CACHE MANIFEST
+# version - 12
+
+CACHE:
+
+# CSS
+css-add2home.css
+css-main.css
+css-normalize.css
+
+# IMAGES
+img/icons/apple-icon-57x57.png
+img/icons/apple-icon-114x114.png
+img/attack.png
+img/move.png
+img/rotate.png
+img/logo.png
+
+# HTML FILES
+index.html
+instr.html
+credits.html
+game.html
+p0.html
+p1.html
+
+# JAVASCRIPT - SPECIFIC ORDER
+js-refresh-manifest.js
+js-add2home.js
+js-main.js
+js-gamescr.js
+js-gamelogic.js
+
+## Any resources not listed above will require the user to be online.
+NETWORK:

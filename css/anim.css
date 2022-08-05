@@ -1,0 +1,412 @@
+/*
+
+
+
+    ========================
+
+    SPLASH SCREEN ANIMATIONS
+
+    ========================
+
+
+
+*/
+
+
+
+@keyframes focus-in {
+
+  0% {
+
+    filter: blur(12px);
+
+    opacity: 0;
+
+  }
+
+  100% {
+
+    filter: blur(0px);
+
+    opacity: 1;
+
+  }
+
+}
+
+
+
+@keyframes tracking-in-expand {
+
+  0% {
+
+    letter-spacing: -0.5em;
+
+    opacity: 0;
+
+  }
+
+  40% {
+
+    opacity: 0.6;
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+  }
+
+}
+
+
+
+@keyframes fade-in {
+
+  0% {
+
+    opacity: 0;
+
+  }
+
+  100% {
+
+    opacity: 1;
+
+    z-index: 0;
+
+  }
+
+}
+
+
+
+@keyframes fade-out-alt {
+
+  0% {
+
+    opacity: 1;
+
+    z-index: 0;
+
+  }
+
+  100% {
+
+    opacity: 0;
+
+    z-index: -5;
+
+  }
+
+}
+
+
+
+@keyframes fade-out {
+
+  0% {
+
+    opacity: 1;
+
+  }
+
+  100% {
+
+    opacity: 0;
+
+    z-index: -10;
+
+  }
+
+}
+
+
+
+/*
+
+
+
+    ===============
+
+    MENU ANIMATIONS
+
+    ===============
+
+
+
+*/
+
+
+
+@keyframes push-right {
+
+  0% {
+
+    opacity: 0;
+
+    z-index: -5;
+
+    width: 0;
+
+  }
+
+  1% {
+
+    opacity: 1;
+
+    z-index: 100;
+
+    width: 1vw;
+
+  }
+
+  100% {
+
+    z-index: 100;
+
+    width: 100vw;
+
+  }
+
+}
+
+
+
+@keyframes pop-left {
+
+  0% {
+
+    z-index: 100;
+
+    width: 100vw;
+
+  }
+
+  99% {
+
+    opacity: 1;
+
+    z-index: 100;
+
+    width: 1vw;
+
+  }
+
+  100% {
+
+    opacity: 0;
+
+    z-index: -5;
+
+    width: 0;
+
+  }
+
+}
+
+
+
+@keyframes pop-menu-left {
+
+  0% {
+
+    justify-self: center;
+
+  }
+
+  100% {
+
+    transform: translateX(-40vw);
+
+    justify-self: start;
+
+  }
+
+}
+
+
+
+@keyframes pop-menu-left-social {
+
+  0% {
+
+    justify-self: center;
+
+  }
+
+  100% {
+
+    transform: translateX(-36vw);
+
+    justify-self: start;
+
+  }
+
+}
+
+
+
+@keyframes slit-in-vertical {
+
+  0% {
+
+    transform: translateZ(-800px) rotateY(90deg);
+
+    opacity: 0;
+
+  }
+
+  54% {
+
+    transform: translateZ(-160px) rotateY(87deg);
+
+    opacity: 1;
+
+  }
+
+  100% {
+
+    transform: translateZ(0) rotateY(0);
+
+  }
+
+}
+
+
+
+@keyframes slit-out-vertical {
+
+  0% {
+
+    transform: translateZ(0) rotateY(0);
+
+  }
+
+  46% {
+
+    transform: translateZ(-160px) rotateY(87deg);
+
+    opacity: 1;
+
+  }
+
+  100% {
+
+    transform: translateZ(-800px) rotateY(90deg);
+
+    opacity: 0;
+
+  }
+
+}
+
+
+
+@keyframes swirl-in {
+
+  0% {
+
+    transform: rotate(-360deg) scale(0);
+
+    opacity: 0;
+
+  }
+
+  100% {
+
+    transform: rotate(0) scale(1);
+
+    opacity: 1;
+
+  }
+
+}
+
+
+
+@keyframes swirl-out {
+
+  0% {
+
+    transform: rotate(0) scale(1);
+
+    opacity: 1;
+
+  }
+
+  100% {
+
+    transform: rotate(-360deg) scale(0);
+
+    opacity: 0;
+
+  }
+
+}
+
+
+
+/*
+
+
+
+    ==================
+
+    GENERAL ANIMATIONS
+
+    ==================
+
+
+
+*/
+
+
+
+@keyframes jello-horizontal {
+
+  0% {
+
+    transform: scale3d(1, 1, 1);
+
+  }
+
+  30% {
+
+    transform: scale3d(1.25, 0.75, 1);
+
+  }
+
+  40% {
+
+    transform: scale3d(0.75, 1.25, 1);
+
+  }
+
+  50% {
+
+    transform: scale3d(1.15, 0.85, 1);
+
+  }
+
+  65% {
+
+    transform: scale3d(0.95, 1.05, 1);
+
+  }
+
+  75% {
+
+    transform: scale3d(1.05, 0.95, 1);
+
+  }
+
+  100% {
+
+    transform: scale3d(1, 1, 1);
+
+  }
+
+}
+

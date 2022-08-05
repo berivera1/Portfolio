@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>NeuroWarriors: Zero || Intro</title>
+  <!--Add Phaser Framework library-->
+  <script src="phaser.min.js"></script>
+  <!--Add custom stylesheet-->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="phaser-canvas"></div>
+  <!--Custom Javascript-->
+  <script type="text/javascript">
+    window.onload = function() {
+      var game = new Phaser.Game(960, 720, Phaser.AUTO, 'phaser-canvas', {
+        preload: preload,
+        create: create
+      });
+      WebFontConfig = {
+          //  'active' means all requested fonts have finished loading
+          //  We set a 1 second delay before calling 'createText'.
+          //  For some reason if we don't the browser cannot render the text the first time it's created.
+          active: function() { game.time.events.add(Phaser.Timer.SECOND, createText, this); },
+          //  The Google Fonts we want to load (specify as many as you like in the array)
+          google: {
+            // Concatonate multi-word font names w/ + sign, like 'Zilla+Slab'
+            families: ['VT323']
+          }
+      };
+      function preload() {
+        game.load.image('logo', 'img/logo.png');
+        game.load.image('background', 'img/background.png');
+        game.load.spritesheet('playButton', 'img/play-button.png', 168, 63);
+        game.load.spritesheet('helpButton', 'img/help-button.png', 168, 63);
+        game.load.spritesheet('creditsButton', 'img/credits-button.png', 245, 63);
+        game.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js');
+      }
+      function create() {
+        // Add images to stage
+        var spBackground = game.add.sprite(game.world.centerX, game.world.centerY, 'background');
+        spBackground.anchor.setTo(0.5, 0.5);
+        var spLogo = game.add.sprite(game.world.centerX, game.world.centerY - 180, 'logo');
+        spLogo.anchor.setTo(0.5, 0.5);
+
+        // Add text
+        //var textFirst = "Click to move";
+        //var textSecond = "Avoid to survive";
+        //var generalStyle = {
+        //  width: "150px",
+        //  font: "35px Arial",
+        //  fill: "white",
+        //  align: "left"
+        //};
+        //var txTitle = game.add.text(game.world.centerX - 100, game.world.centerY, textFirst, generalStyle);
+
+        // Add button
+        // The numbers given in par are indexes of the frame in this order:
+        // OVER, OUT, DOWN
+        var btPlay = game.add.button(game.world.centerX, game.world.centerY + 25, 'playButton', actionOnClick, this, 1, 0, 2);
+        btPlay.anchor.setTo(0.64, 0.5);
+        var btHelp = game.add.button(game.world.centerX, game.world.centerY + 120, 'helpButton', actionOnClick, this, 1, 0, 2);
+        btHelp.anchor.setTo(0.64, 0.5);
+        var btCredits = game.add.button(game.world.centerX, game.world.centerY + 215, 'creditsButton', actionOnClick, this, 1, 0, 2);
+        btCredits.anchor.setTo(0.60, 0.5);
+      }
+      function createText () {
+
+      }
+      function actionOnClick() {
+        alert('A button Clicked');
+      }
+    } // end window.onload
+  </script>
+</body>
+</html>
