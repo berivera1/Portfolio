@@ -878,7 +878,7 @@ $(window).bind('mousewheel', function (event) {
     }
 });
 
-var supportTouch = $.support.touch,
+/*var supportTouch = $.support.touch,
     scrollEvent = "touchmove scroll",
     touchStartEvent = supportTouch ? "touchstart" : "mousedown",
     touchStopEvent = supportTouch ? "touchend" : "mouseup",
@@ -956,6 +956,30 @@ $("#page-container").on('swipedown', function (event) {
 });
 
 $("#page-container").on('swipeup', function (event) {
+    endTime = new Date();
+    var timeDiff = endTime - startTime;
+    if (timeDiff > 100) {
+        if (isExploring == false) {
+            explore();
+        } else {
+            pushProj(false, false);
+        }
+        startTime = new Date();
+    }
+});*/
+
+document.addEventListener('swiped-down', function (event) {
+    endTime = new Date();
+    var timeDiff = endTime - startTime;
+    if (timeDiff > 100) {
+        if (isExploring == true) {
+            pushProj(true, false);
+        }
+        startTime = new Date();
+    }
+});
+
+document.addEventListener('swiped-up', function (event) {
     endTime = new Date();
     var timeDiff = endTime - startTime;
     if (timeDiff > 100) {
