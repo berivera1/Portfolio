@@ -948,7 +948,7 @@ $.each({
     };
 });
 
-$("#page-container").on('swipeup', function (event) {
+$("#page-container").on('swipedown', function (event) {
     endTime = new Date();
     var timeDiff = endTime - startTime;
     if (timeDiff > 100) {
@@ -959,7 +959,7 @@ $("#page-container").on('swipeup', function (event) {
     }
 });
 
-$("#page-container").on('swipedown', function (event) {
+$("#page-container").on('swipeup', function (event) {
     endTime = new Date();
     var timeDiff = endTime - startTime;
     if (timeDiff > 100) {
