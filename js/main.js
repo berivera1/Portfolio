@@ -108,8 +108,6 @@ function closeMainMenu() {
 
     document.getElementById("main-menu").classList.remove("push-down");
 
-    console.log("this shit works!");
-
   }
 
   else {
@@ -361,8 +359,6 @@ function pushProj(isUp, isFromExplore) {
     }
 
   }
-
-  console.log(projTop);
 
   // If the user is on a Tablet or Phone, move the divs accordingly.
 
@@ -882,7 +878,7 @@ $(window).bind('mousewheel', function (event) {
     }
 });
 
-/*var supportTouch = $.support.touch,
+var supportTouch = $.support.touch,
     scrollEvent = "touchmove scroll",
     touchStartEvent = supportTouch ? "touchstart" : "mousedown",
     touchStopEvent = supportTouch ? "touchend" : "mouseup",
@@ -946,13 +942,9 @@ $.each({
             $(this).bind(sourceEvent, $.noop);
         }
     };
-});*/
+});
 
-var pageContainer = $('#page-container');
-
-pageContainer.touch();
-
-pageContainer.on('swipeDown', function (event) {
+$("#page-container").on('swipedown', function (event) {
     endTime = new Date();
     var timeDiff = endTime - startTime;
     if (timeDiff > 100) {
@@ -963,7 +955,7 @@ pageContainer.on('swipeDown', function (event) {
     }
 });
 
-pageContainer.on('swipeUp', function (event) {
+$("#page-container").on('swipeup', function (event) {
     endTime = new Date();
     var timeDiff = endTime - startTime;
     if (timeDiff > 100) {
