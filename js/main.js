@@ -882,7 +882,7 @@ $(window).bind('mousewheel', function (event) {
     }
 });
 
-$("#page-container").bind('swipeup', function (event) {
+$("#page-container").on('swipeup', function (event) {
     endTime = new Date();
     var timeDiff = endTime - startTime;
     if (timeDiff > 100) {
@@ -893,7 +893,7 @@ $("#page-container").bind('swipeup', function (event) {
     }
 });
 
-$("#page-container").bind('swipedown', function (event) {
+$("#page-container").on('swipedown', function (event) {
     endTime = new Date();
     var timeDiff = endTime - startTime;
     if (timeDiff > 100) {
