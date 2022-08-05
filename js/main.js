@@ -881,3 +881,27 @@ $(window).bind('mousewheel', function (event) {
         startTime = new Date();
     }
 });
+
+$(window).bind('swipeup', function (event) {
+    endTime = new Date();
+    var timeDiff = endTime - startTime;
+    if (timeDiff > 100) {
+        if (isExploring == true) {
+            pushProj(true, false);
+        }
+        startTime = new Date();
+    }
+});
+
+$(window).bind('swipedown', function (event) {
+    endTime = new Date();
+    var timeDiff = endTime - startTime;
+    if (timeDiff > 100) {
+        if (isExploring == false) {
+            explore();
+        } else {
+            pushProj(false, false);
+        }
+        startTime = new Date();
+    }
+});
