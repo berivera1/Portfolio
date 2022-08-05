@@ -18,7 +18,7 @@ var endTime;
 
 if (tabletWatch.matches) {
 
-  document.getElementById("bear-logo").src = "img/logo/bear_white.svg";
+  document.getElementById("bear-logo").src = "img/logo/crlogo_grey.svg";
 
 }
 
@@ -760,7 +760,7 @@ setTimeout(function(){
 
   new animatedText(document.getElementById("ber"),
 
-    ["BER", "BEST", "COOLEST", "NEWEST", "LATEST", "SHARPEST", "SLICKEST", "SMOOTHEST", "PUREST"])
+    ["CLEAN", "COOL", "CRAZY", "SLICK", "SUBLIME", "SMOOTH", "CHIC", "CERTIFIABLE", "STUNNING"])
 
     ;}, 12000);
 
