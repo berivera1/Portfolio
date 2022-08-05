@@ -882,7 +882,7 @@ $(window).bind('mousewheel', function (event) {
     }
 });
 
-var supportTouch = $.support.touch,
+/*var supportTouch = $.support.touch,
     scrollEvent = "touchmove scroll",
     touchStartEvent = supportTouch ? "touchstart" : "mousedown",
     touchStopEvent = supportTouch ? "touchend" : "mouseup",
@@ -946,9 +946,13 @@ $.each({
             $(this).bind(sourceEvent, $.noop);
         }
     };
-});
+});*/
 
-$("#page-container").on('swipedown', function (event) {
+var pageContainer = $('#page-container');
+
+pageContainer.touch();
+
+pageContainer.on('swipeDown', function (event) {
     endTime = new Date();
     var timeDiff = endTime - startTime;
     if (timeDiff > 100) {
@@ -959,7 +963,7 @@ $("#page-container").on('swipedown', function (event) {
     }
 });
 
-$("#page-container").on('swipeup', function (event) {
+pageContainer.on('swipeUp', function (event) {
     endTime = new Date();
     var timeDiff = endTime - startTime;
     if (timeDiff > 100) {
